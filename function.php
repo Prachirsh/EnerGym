@@ -13,41 +13,46 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "Azureuser", "pwd" => "MBF@1234567", "Database" => "energym", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:gym1.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
 //checking login
 if(isset($_POST['login_submit'])){
-	$username=$_POST['username'];
-	$password=$_POST['password'];
-	$query="select * from admin where username='$username' and password='$password'";
-	$query2="select * from members where username='$username' and password='$password'";
-	$result=mysqli_query($con,$query);
-	$result2=mysqli_query($con,$query2);
-	if(mysqli_num_rows($result)==1)
-	{
-        $_SESSION['admin']=$_POST['username'];
-		header("Location:admin-panel.php");
-}
-else if(mysqli_num_rows($result2)==1)
-{
-    $row=mysqli_fetch_array($result2);
-    $_SESSION['user']=$_POST['username'];
-     $_SESSION['id']=$row['member_id'];
-     $_SESSION['name']=$row['fname'];
-   header("Location:client/customer-panel.php");
-}
-	else
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    $query="select * from admin where username=:username and password=:password";
+    $query2="select * from members where username=:username and password=:password";
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(':username', $username);
+    $stmt->bindParam(':password', $password);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    $stmt2 = $conn->prepare($query2);
+    $stmt2->bindParam(':username', $username);
+    $stmt2->bindParam(':password', $password);
+    $stmt2->execute();
+    $result2 = $stmt2->fetchAll();
+    if(count($result) == 1)
+    {
+        $_SESSION['admin']=$username;
+        header("Location:admin-panel.php");
+    }
+    else if(count($result2) == 1)
+    {
+        $row = $result2[0];
+        $_SESSION['user']=$username;
+        $_SESSION['id']=$row['member_id'];
+        $_SESSION['name']=$row['fname'];
+        header("Location:client/customer-panel.php");
+    }
+    else
     {
         echo "<script>alert('Invalid Credentials, Please try again')</script>";
         echo "<script>window.open('index.php','_self')</script>";
     }
-    }
-    if(isset($_POST['regbtn']))
-    {
-        header("Location:client/register.php");
-    }
+}
+
+if(isset($_POST['regbtn']))
+{
+    header("Location:client/register.php");
+}
 
 //adding customer
 if(isset($_POST['customer_submit']))
@@ -60,15 +65,22 @@ if(isset($_POST['customer_submit']))
     $username=$_POST['username'];
     $password=$_POST['password'];
     $member_trainer=$_POST['member_trainer'];
-    $query="insert into members(fname,lname,email,username,password,contact,member_trainer,gender,package,payment,batch,status)values
-    ('$fname','$lname','$email','$username','$password','$contact','0','$gender','0','0','0','0')";
-     $customer_object=mysqli_query($con,$query);
+    $query="insert into members(fname,lname,email,username,password,contact,member_trainer,gender,package,payment,batch,status)values(:fname,:lname,:email,:username,:password,:contact,'0',:gender,'0','0','0','0')";
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(':fname', $fname);
+    $stmt->bindParam(':lname', $lname);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':username', $username);
+    $stmt->bindParam(':password', $password);
+    $stmt->bindParam(':contact', $contact);
+    $stmt->bindParam(':gender', $gender);
+    $customer_object = $stmt->execute();
     if($customer_object)
     {
-      echo "<script>alert('Member added.')</script>";
+        echo "<script>alert('Member added.')</script>";
         echo "<script>window.open('admin-panel.php','_self')</script>";
     }
-    } 
+}
 
 //trainer adding method
     if(isset($_POST['trainer_submit']))
