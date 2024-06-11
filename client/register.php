@@ -4,6 +4,13 @@
 <?php 
 include "../includes/conn.php";
 include "../includes/imports.php";
+
+// Check if the Back button is clicked
+if(isset($_POST['back'])){
+    header("Location: ../index.php");
+    exit();
+}
+
 ?>
    <div class="container-fluid">
     <div class="row">
@@ -48,7 +55,7 @@ include "../includes/imports.php";
         </select> -->
         <br>      
     <input type="submit" class="btn btn-primary" name="customer_submit" value="Register">    
-                <a href="../index.php" class="btn btn-danger">Back</a>
+                <button type="submit" class="btn btn-danger" name="back">Back</button>
                 </form>
                 </div>
       </div>
