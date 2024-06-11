@@ -5,7 +5,7 @@
    } 
 error_reporting(0);
 try {
-    $conn = new PDO("sqlsrv:server = tcp:gym1.database.windows.net,1433; Database = energym", "Azureuser", "{your_password_here}");
+    $conn = new PDO("sqlsrv:server = tcp:gym1.database.windows.net,1433; Database = energym", "Azureuser", "123456");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
@@ -14,7 +14,7 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "Azureuser", "pwd" => "{your_password_here}", "Database" => "energym", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$connectionInfo = array("UID" => "Azureuser", "pwd" => "123456", "Database" => "energym", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:gym1.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 //checking login
