@@ -44,13 +44,12 @@ include "../includes/imports.php";
             <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
             <?php endwhile;?>
             <option value="">No Trainer</option>
-        </select> -->
-        <br>      
-           
+        </select>
+        <br>       
         <input type="submit" class="btn btn-primary" name="customer_submit" value="Register" /> 
           
-        <input type="submit" name="cancle"
-              class="btn btn-danger" value="Back" /> 
+       <a href="../index.php" class="btn btn-danger">Back</a>
+
     </form>
   <div class="mt-5"></div>
       <?php 
