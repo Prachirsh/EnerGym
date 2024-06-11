@@ -56,11 +56,10 @@ include "../includes/imports.php";
         } 
     ?> 
             <form method="post"> 
-        <input type="submit" name="button1"
-                class="button" value="Register" /> 
+        <input type="submit" class="btn btn-primary" name="customer_submit" value="Register" /> 
           
         <input type="submit" name="button2"
-                class="button" value="Back" /> 
+              class="btn btn-danger" value="Back" /> 
     </form>
   <div class="mt-5"></div>
       <?php 
