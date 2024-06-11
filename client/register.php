@@ -38,6 +38,12 @@ include "../includes/imports.php";
 <option value="Other">Other</option>
 </select> 
                 </form>
+<label>Trainer </label> 
+ <select class="form-control" name="member_trainer">
+     <?php while($row1 = mysqli_fetch_array($result1)):;?>
+            <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
+            <?php endwhile;?>
+            <option value="">No Trainer</option>
 
 <?php
         if(array_key_exists('button1', $_POST)) { 
@@ -55,10 +61,10 @@ include "../includes/imports.php";
     ?> 
             <form method="post"> 
         <input type="submit" name="button1"
-                class="button" value="Button1" /> 
+                class="button" value="Register" /> 
           
         <input type="submit" name="button2"
-                class="button" value="Button2" /> 
+                class="button" value="Back" /> 
     </form>
   <div class="mt-5"></div>
       <?php 
