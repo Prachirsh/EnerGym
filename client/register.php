@@ -38,39 +38,21 @@ include "../includes/imports.php";
 <option value="Other">Other</option>
 </select> 
                 
-<label>Trainer </label> 
+<!-- <label>Trainer </label> 
  <select class="form-control" name="member_trainer">
-   <?php while($row1 = mysqli_fetch_array($result1)):;?>
+
+ <?php while($row1 = mysqli_fetch_array($result1)):;?>
             <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
             <?php endwhile;?>
             <option value="">No Trainer</option>
-        </select> 
+        </select> -->
         <br>      
-  
-            <?php
-        if(array_key_exists('button1', $_POST)) { 
-            button1(); 
-        } 
-        else if(array_key_exists('button2', $_POST)) { 
-            button2(); 
-        }
-
- 
-function button1() { 
-            echo "This is Button1 that is selected"; 
-        } 
-        function button2() { 
-            echo "This is Button2 that is selected"; 
-        } 
-<form method="post"> 
-        <input type="submit" name="button1"
-                class="button" value="Button1" /> 
-          
-        <input type="submit" name="button2"
-                class="button" value="Button2" /> 
-    </form>
-    ?>        
-
+    <input type="submit" class="btn btn-primary" name="customer_submit" value="Register">    
+                <a href="../index.php" class="btn btn-danger">Back</a>
+                </form>
+                </div>
+      </div>
+       </div>
   <div class="mt-5"></div>
       <?php 
       include '../includes/footer.php';
