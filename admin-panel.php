@@ -50,11 +50,10 @@ if (!isset($_SESSION['admin']))
             <option value="">No Trainer</option>
         </select> -->
         <br>      
-  <input type="submit" class="btn btn-primary" name="customer_submit" value="Register">    
+        <input type="submit" class="btn btn-primary" name="customer_submit" value="Register">    
                 <a href="../index.php" class="btn btn-danger">Back</a>
                 </form>
                 </div>
       </div>
        </div>
   <div class="mt-5"></div>
-      
