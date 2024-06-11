@@ -4,17 +4,6 @@
 <?php 
 include "../includes/conn.php";
 include "../includes/imports.php";
-
-// Check if the form is submitted
-if(isset($_POST['customer_submit'])){
-    // Handle form submission
-    // You need to add the code here to process the form data
-    // After processing, you can redirect the user to another page if needed
-    // For example:
-    // header("Location: ../success.php");
-    // exit();
-}
-
 ?>
    <div class="container-fluid">
     <div class="row">
@@ -28,7 +17,7 @@ if(isset($_POST['customer_submit'])){
                 <h3>Register new members</h3>
                 </div> 
                 <div class="card-body"></div>
-                <form class="form-group p-3" action="" method="post"> <!-- Removed action="../function.php" -->
+                <form class="form-group p-3" action="../function.php" method="post">
                 <label>first name:</label>
 <input type="text" name="fname" required class="form-control">
                     <label>last name:</label>
@@ -43,12 +32,15 @@ if(isset($_POST['customer_submit'])){
 <input type="text" name="password" required class="form-control">  
 <label>gender</label>
 <select class="form-control" name="gender">
+
 <option value="male">male</option>
 <option value="female">female</option>
 <option value="Other">Other</option>
 </select> 
+                
 <!-- <label>Trainer </label> 
  <select class="form-control" name="member_trainer">
+
  <?php while($row1 = mysqli_fetch_array($result1)):;?>
             <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
             <?php endwhile;?>
