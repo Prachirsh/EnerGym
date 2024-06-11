@@ -40,11 +40,7 @@ include "../includes/imports.php";
                 </form>
 <label>Trainer </label> 
  <select class="form-control" name="member_trainer">
-     <?php while($row1 = mysqli_fetch_array($result1)):;?>
-            <option value="<?php echo $row1[0];?>"><?php echo $row1[1];?></option>
-            <?php endwhile;?>
-            <option value="">No Trainer</option>
-
+   
 <?php
         if(array_key_exists('button1', $_POST)) { 
             button1(); 
