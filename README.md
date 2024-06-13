@@ -17,6 +17,7 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
   <li>Azure Monitoring Service(Alert)...[To getting alerts about system on mail and sms]</li>
   <li>Azure Backup Service...[To create backup for our webapp]</li>
   <li>Azure Storage Service...[To store backup files]</li>
+  <li>Azure DNS service...[To give hostname to website]</li>
   <li>Azure AI service(Chatbot)...[To solve user queries]</li></ol>
 </h4>
 <hr>
