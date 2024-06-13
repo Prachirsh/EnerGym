@@ -1,2 +1,0 @@
-# EnerGym
-Gym Management System
