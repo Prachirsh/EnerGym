@@ -29,7 +29,8 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <li>MYSQL</li></ul></h4>
 <hr>
 <h2>Resource Visualizer</h2>
-![City Hospital Management Service](azure services/visualizer.png?raw=true)
+![image](https://github.com/Prachirsh/EnerGym/assets/120733226/093fa933-2f8f-41b3-b683-776976c5e511)
+
 
 
 
