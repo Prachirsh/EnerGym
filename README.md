@@ -30,5 +30,4 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <hr>
 <h2>Resource Visualizer</h2>
 
-<h2>Storage Service</h2>
 
