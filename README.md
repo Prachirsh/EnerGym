@@ -1,9 +1,9 @@
 <h1>EnerGym</h1>
 <hr>
 <h3>Working Links For The Project</h3>
-<h4>Hostinger Url: www.energym.fun</h4>
+<h4>Project Demo Url: www.energym.fun</h4>
 <h4>Github Repository:  https://github.com/Prachirsh/EnerGym </h4>
-<h4>Project Documentation with Project vedio: </h4>
+<h4>Project Documentation with Project video: </h4>
 <hr>
 <h2>Project Aim</h2>
 <h4>ENERGYM is a platform where any kind of user, with variety age group people can join the fitness club. This platform is built, so that the people can workout from their home without being judged. They can also join the gym (physically) as the lockdown reopens, no extra charges will be applicable.  
