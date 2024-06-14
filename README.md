@@ -29,6 +29,7 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <li>MYSQL</li></ul></h4>
 <hr>
 <h2>Resource Visualizer</h2>
-
 ![alt text](visualizer.png)
+<h2>Storage Service</h2>
 ![alt text](pic1-1.png)
+![alt text](Picture6-1.png) ![alt text](Picture2-2.png) ![alt text](Picture3-1.png) ![alt text](Picture4-1.png) ![alt text](Picture5-1.png)
