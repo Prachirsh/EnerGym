@@ -30,3 +30,5 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <hr>
 <h2>Resource Visualizer</h2>
 ![alt text](azureservices/visualizer.png)
+<h2>Storage service</h2>
+![alt text](Picture6.png) ![alt text](pic1.png) ![alt text](Picture2.png) ![alt text](Picture3.png) ![alt text](Picture4.png) ![alt text](Picture5.png)
