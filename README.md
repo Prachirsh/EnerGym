@@ -31,4 +31,6 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <h2>Resource Visualizer</h2>
 
 ![alt text](visualizer.png)
-![alt text](images/2.jpg)
+
+
+![alt text](azurese/2.jpg)
