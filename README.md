@@ -39,3 +39,7 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <h2>Monitoring Service(Alert)</h2>
 
 ![alt text](Monitor9.png) ![alt text](Monitor1.png) ![alt text](Monitor2.png) ![alt text](monitor3.png) ![alt text](Monitor4.png) ![alt text](Monitor5.png) ![alt text](Monitor6.png) ![alt text](Monitor7.png) ![alt text](monitor8.png)
+
+<h2>Storage account service</h2>
+
+![alt text](storage6.png) ![alt text](storage1.png) ![alt text](storage2.png) ![alt text](storage3.png) ![alt text](storage4.png) ![alt text](storage5.png)
