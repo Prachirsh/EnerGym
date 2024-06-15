@@ -43,3 +43,7 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <h2>Storage account service</h2>
 
 ![alt text](storage6.png) ![alt text](storage1.png) ![alt text](storage2.png) ![alt text](storage3.png) ![alt text](storage4.png) ![alt text](storage5.png)
+
+<h2>Azure DNS and Hostinger</h2>
+
+![alt text](hostinger4.png) ![alt text](hostinger1.png) ![alt text](hostinger2.png) ![alt text](hostinger3.png)
