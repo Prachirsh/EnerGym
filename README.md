@@ -2,6 +2,8 @@
 <hr>
 <h3>Working Links For The Project</h3>
 <h4>Project Demo Url: www.energym.fun</h4>
+<b>only http port getting access https doesnt work</b>
+<h4>another working url: http://104.211.117.56/GymManagement_PHP/</h4>
 <u><i>Admin account details: <i><b>username:</b>admin <b>password:</b>admin<br><u>
 <h4>Github Repository:  https://github.com/Prachirsh/EnerGym </h4>
 <h4>Project Documentation with Project video: https://drive.google.com/drive/folders/1v-MK9YHRRa2KvydUmNHRS_-N68TX_Q0b?usp=sharing</h4>
