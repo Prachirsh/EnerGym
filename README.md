@@ -47,3 +47,7 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <h2>Azure DNS and Hostinger</h2>
 
 ![alt text](hostinger4.png) ![alt text](hostinger1.png) ![alt text](hostinger2.png) ![alt text](hostinger3.png)
+
+<h2>Azure AI service(laguage service-chatbot)</h2>
+
+![alt text](AI13.png) ![alt text](AI1.png) ![alt text](AI2.png) ![alt text](AI3.png) ![alt text](AI4.png) ![alt text](AI5.png) ![alt text](AI6.png) ![alt text](AI7.png) ![alt text](AI8.png) ![alt text](AI9.png) ![alt text](AI10.png) ![alt text](AI12.png)
