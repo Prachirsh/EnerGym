@@ -60,3 +60,5 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 <h2>Website Preview</h2>
 
 ![alt text](overview7.png) ![alt text](overview1.png) ![alt text](overview2.png) ![alt text](overview3.png) ![alt text](overview4.png) ![alt text](overview5.png) ![alt text](overview6.png)
+
+<i><b>This is the overall project overview of Gym Management system with some Azure and AI service. I made this project for this internship purpose only. Thanks for giving time to Go through my overall project and repository<b></i>
