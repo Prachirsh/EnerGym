@@ -32,3 +32,6 @@ The purpose of ENERGYM club reaches far beyond the need for physical fitness. Th
 
 ![alt text](VM1.png)
 ![alt text](VM13.png) ![alt text](VM2.png) ![alt text](VM3.png) ![alt text](VM4.png) ![alt text](VM5.png) ![alt text](VM6.png) ![alt text](VM7.png) ![alt text](VM8.png) ![alt text](VM9.png) ![alt text](VM10.png) ![alt text](VM11.png) ![alt text](VM12.png)
+<h2>Backup service</h2>
+
+![alt text](backup13.png) ![alt text](backup1.png) ![alt text](backup2.png) ![alt text](backup3.png) ![alt text](backup4.png) ![alt text](backup5.png) ![alt text](backup6.png) ![alt text](backup7.png) ![alt text](backup8.png) ![alt text](backup9.png) ![alt text](backup10.png) ![alt text](backup11.png) ![alt text](backup12.png)
